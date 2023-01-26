@@ -6,7 +6,7 @@
 
 .main_header {
 	position: fixed;
-	padding: 20px calc(50% - 600px);
+	padding: 20px calc(50% - 700px);
 	background: transparent;
 	font-family: $first-font;
 	color: $brown;
@@ -47,6 +47,12 @@
 		font-family: $first-font;
 		padding: 20px;
 		background-color: transparent;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.main_header {
+		padding: 20px calc(50% - 600px);
 	}
 }
 

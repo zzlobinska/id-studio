@@ -18,7 +18,7 @@ const HeroPage = () => {
 				</div>
 				<Button text={'get started'} />
 			</div>
-			<div className={styles.hero_image}>
+			<div className={styles.hero__image}>
 				<img
 					className={styles.hero__image__img}
 					alt='an interior design with minimalistic finish'
