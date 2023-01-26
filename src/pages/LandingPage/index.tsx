@@ -1,6 +1,7 @@
 import MainHeader from '../../Components/Layout/MainHeader';
 import AboutPage from './Components/AboutPage';
 import HeroPage from './Components/HeroPage';
+import ServicesPage from './Components/ServicesPage';
 
 const LandingPage = () => {
 	return (
@@ -8,6 +9,7 @@ const LandingPage = () => {
 			<MainHeader />
 			<HeroPage />
 			<AboutPage />
+			<ServicesPage/>
 		</>
 	);
 };

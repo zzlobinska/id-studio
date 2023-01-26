@@ -1,0 +1,35 @@
+@use '../../styles/index.scss' as *;
+
+.service {
+	text-align: center;
+	height: 250px;
+
+	&__img {
+		margin-bottom: 42px;
+		height: 30%;
+	}
+	&__title {
+		text-transform: uppercase;
+		font-family: $first-font;
+		font-size: 18px;
+		color: $dark;
+		font-weight: 600;
+		line-height: 22px;
+		margin-bottom: 19px;
+	}
+	&__text {
+		color: $dark-grey;
+		line-height: 170%;
+		font-family: $first-font;
+		
+	}
+}
+
+@media (max-width: 1024px) {
+	.service {
+		&__text {
+			margin: 0 20px;
+		
+		}
+	}
+}
