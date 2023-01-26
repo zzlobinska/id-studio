@@ -5,14 +5,11 @@ import icon1 from '../../../../Components/img/icon1.png';
 import icon2 from '../../../../Components/img/icon2.png';
 import icon3 from '../../../../Components/img/icon3.png';
 import icon4 from '../../../../Components/img/icon4.png';
+import Button from '../../../../Components/UI/Button';
 
 const ServicesPage = () => {
-	
-
-	
-
 	return (
-		<div className={styles.services}>
+		<div className={styles.services} id='services'>
 			<div className={styles.services__header}>
 				<h2 className={styles.services__header__1}>Our </h2>
 				<h2 className={styles.services__header__2}> Services</h2>
@@ -47,7 +44,7 @@ const ServicesPage = () => {
 					paragraphText='We provide proper project management as it’s one of the main success factors in interior design.'
 				/>
 			</div>
-			<button className={styles.services__btn}>Free Consultation</button>
+			<Button className={styles.active} text='free consultation' />
 		</div>
 	);
 };

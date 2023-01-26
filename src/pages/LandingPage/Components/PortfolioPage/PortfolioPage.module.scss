@@ -1,0 +1,142 @@
+@use '../../../../styles/index.scss' as *;
+
+.portfolio {
+	padding: 78px calc(50% - 700px);
+	background-color: $grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	font-family: $second-font;
+	font-size: 40px;
+	letter-spacing: 0.005em;
+	line-height: 41px;
+	margin-bottom: 85px;
+
+	&__2 {
+		margin-left: 10px;
+		color: $gold;
+	}
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.types {
+	display: flex;
+
+	&__type {
+		font-family: $first-font;
+		text-transform: uppercase;
+		padding: 30px;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		color: $dark;
+		line-height: 20px;
+		transition: color 0.5s;
+		&__1 {
+			padding-left: 0;
+		}
+	}
+}
+
+.more {
+	font-family: $first-font;
+	text-transform: uppercase;
+	padding: 30px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	color: $dark;
+	text-decoration: underline;
+	line-height: 20px;
+	font-weight: 600;
+	padding-right: 0;
+	&__mobile {
+		display: none;
+	}
+}
+
+.photos {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	width: 100%;
+	&__photo {
+		width: 100%;
+		border-radius: 10px;
+		object-fit: cover;
+		height: 320px;
+		transition: transform 0.5s;
+		// width: 270px;
+		&:hover {
+			transform: scale(105%);
+		}
+	}
+}
+
+.active {
+	color: $gold;
+}
+
+@media (max-width: 1600px) {
+	.portfolio {
+		padding: 78px calc(50% - 600px);
+	}
+}
+@media screen and (max-width: 1300px) {
+	.portfolio {
+		padding: 78px 0 50px;
+	}
+
+	.header {
+		font-size: 32px;
+		line-height: 32px;
+		margin-bottom: 64px;
+	}
+
+	.types {
+		justify-content: center;
+		width: 100%;
+	}
+	.more {
+		display: none;
+		&__mobile {
+			display: flex;
+			font-family: $first-font;
+			text-transform: uppercase;
+			padding: 30px;
+			border: none;
+			background-color: transparent;
+			cursor: pointer;
+			color: $dark;
+			text-decoration: underline;
+			text-decoration-color: $gold;
+			text-underline-offset: 5px;
+			line-height: 20px;
+			font-weight: 600;
+			margin-top: 20px;
+		}
+	}
+
+	.photos {
+		display: flex;
+		flex-direction: column;
+		&__photo {
+			// position: absolute;
+			width: 100vw;
+			border-radius: 0;
+			&:nth-last-child(-n + 5) {
+				display: none;
+			}
+		}
+	}
+}

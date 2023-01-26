@@ -29,23 +29,6 @@
 		}
 	}
 
-	&__btn {
-		
-			padding: 12px 34px;
-			font-family: $first-font;
-			font-weight: bold;
-			border: 2px solid $gold;
-			line-height: 24px;
-			text-align: center;
-			text-transform: uppercase;
-			color: $dark;
-			border-radius: 8px;
-			width: fit-content;
-			font-size: 16px;
-			background-color: transparent;
-			cursor: pointer;
-		
-	}
 }
 
 @media screen and (max-width: 1600px) {
@@ -77,6 +60,6 @@
 			}
 		}
 
-        &__btn {display: none;}
 	}
+    .active {display: none;}
 }

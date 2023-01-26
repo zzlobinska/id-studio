@@ -33,10 +33,10 @@ const MainHeader = () => {
 						<a href='#services' className={styles.left__links__link}>
 							Services
 						</a>
-						<a href='#services' className={styles.left__links__link}>
+						<a href='#portfolio' className={styles.left__links__link}>
 							Portfolio
 						</a>
-						<a href='#services' className={styles.left__links__link}>
+						<a href='#pricing' className={styles.left__links__link}>
 							Pricing
 						</a>
 					</div>
