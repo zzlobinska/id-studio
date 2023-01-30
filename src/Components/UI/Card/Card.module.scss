@@ -1,0 +1,137 @@
+@use '../../../styles/index.scss' as *;
+
+.card {
+	width: 270px;
+	height: 450px;
+	background-color: #fdfbf8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 2px solid $gold;
+	border-radius: 10px;
+	color: $dark;
+
+	&.golden {
+		background-color: $gold;
+		color: white;
+	}
+}
+
+.content {
+	&__title {
+		font-family: $second-font;
+		font-size: 24px;
+		line-height: 23px;
+		margin-bottom: 31px;
+	}
+
+	&__price {
+		font-family: $second-font;
+		&__1 {
+			font-size: 44px;
+			line-height: 43px;
+			margin-bottom: 7px;
+		}
+		&__2 {
+			font-size: 18px;
+			line-height: 17px;
+		}
+	}
+
+	&__services {
+		margin-bottom: 54px;
+		&__service {
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 180%;
+		}
+	}
+}
+
+.btn_mobile {
+	display: none;
+}
+
+.line {
+	margin: 27px 0;
+	width: 200px;
+	border: 1px solid #dcd1bb;
+}
+
+@media (max-width: 1024px) {
+	.card {
+		height: auto;
+	}
+
+	.content {
+		height: 100%;
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__title {
+			font-size: 20px;
+			line-height: 19px;
+			margin-top: 27px;
+		}
+		&__price {
+			display: flex;
+			align-items: baseline;
+			justify-content: center;
+			gap: 14px;
+			&__1 {
+				font-size: 28px;
+				line-height: 27px;
+			}
+			&__2 {
+				font-size: 16px;
+			}
+		}
+		&__services {
+			margin-bottom: 36px;
+			&__service {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.btn {
+		display: none;
+	}
+
+	.btn_mobile {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		background-color: $gold;
+		color: white;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-family: $first-font;
+		font-weight: 700;
+		border: none;
+		padding: 12px 60px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-top: 1px solid white;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: white;
+			border: 2px solid $gold;
+			color: $gold;
+		}
+	}
+
+	.line {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

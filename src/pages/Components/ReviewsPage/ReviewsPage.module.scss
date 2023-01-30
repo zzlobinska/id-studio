@@ -1,0 +1,53 @@
+@use '../../../styles/index.scss' as *;
+
+.reviews {
+	padding: 80px calc(50% - 700px);
+	background-color: $grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+	display: flex;
+    width: 100%;
+	font-size: 40px;
+	line-height: 39px;
+	font-family: $second-font;
+    justify-content: center;
+    margin-bottom: 50px;
+	&__2 {
+		margin-left: 20px;
+		color: $gold;
+	}
+}
+.profiles {
+	display: flex;
+	gap: 30px;
+}
+
+@media screen and (max-width: 1600px) {
+	.reviews {
+		padding: 80px calc(50% - 600px);
+	}
+}
+@media screen and (max-width: 1300px) {
+	.reviews {
+		padding: 80px calc(50% - 480px);
+	}
+}
+@media (max-width: 1024px) {
+	.reviews {
+		padding: 60px 30px;
+	}
+
+    .title {
+        font-size: 32px;
+        line-height: 33px;
+        letter-spacing: 0.005em;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

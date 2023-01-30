@@ -5,3 +5,26 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.alice-carousel__stage {
+	// display: flex;
+	// gap: 30px;
+}
+
+.alice-carousel__prev-btn .alice-carousel__prev-btn-item {
+	display: none;
+}
+
+.alice-carousel__next-btn .alice-carousel__next-btn-item {
+	display: none;
+}
+
+  .alice-carousel__dots-item {
+	width: 14px !important;
+	height: 14px !important;
+	background-color: #DFDFDF !important;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
+    background-color: #D3A265 !important;
+}

@@ -1,11 +1,10 @@
 import styles from './ServicesPage.module.scss';
-import Service from '../../../../Components/Layout/Service';
-
-import icon1 from '../../../../Components/img/icon1.png';
-import icon2 from '../../../../Components/img/icon2.png';
-import icon3 from '../../../../Components/img/icon3.png';
-import icon4 from '../../../../Components/img/icon4.png';
-import Button from '../../../../Components/UI/Button';
+import Service from '../../../Components/Layout/Service';
+import icon1 from '../../../Components/img/icon1.png'
+import icon2 from '../../../Components/img/icon2.png'
+import icon3 from '../../../Components/img/icon3.png'
+import icon4 from '../../../Components/img/icon4.png'
+import Button from '../../../Components/UI/Button';
 
 const ServicesPage = () => {
 	return (

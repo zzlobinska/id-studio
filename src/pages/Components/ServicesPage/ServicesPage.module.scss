@@ -1,4 +1,4 @@
-@use '../../../../styles/index.scss' as *;
+@use '../../../styles/index.scss' as *;
 
 .services {
 	padding: 80px calc(50% - 700px);
@@ -28,7 +28,6 @@
 			display: none;
 		}
 	}
-
 }
 
 @media screen and (max-width: 1600px) {
@@ -59,7 +58,8 @@
 				border: 1px solid #dcd1bb;
 			}
 		}
-
 	}
-    .active {display: none;}
+	.active {
+		display: none;
+	}
 }

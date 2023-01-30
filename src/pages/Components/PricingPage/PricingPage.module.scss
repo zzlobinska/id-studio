@@ -1,0 +1,43 @@
+@use '../../../styles/index.scss' as *;
+
+.pricing {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 102px 0;
+}
+
+.title {
+	display: flex;
+	font-size: 40px;
+	line-height: 39px;
+	font-family: $second-font;
+	&__2 {
+		margin-left: 20px;
+		color: $gold;
+	}
+}
+
+.card {
+	display: flex;
+	gap: 80px;
+	margin-top: 70px;
+}
+
+@media (max-width: 1024px) {
+	.pricing {
+		padding: 60px 0;
+	}
+
+    .title {
+        font-size: 32px;
+        line-height: 33px;
+        letter-spacing: 0.005em;
+    }
+
+	.card {
+		flex-direction: column;
+		gap: 30px;
+	}
+}

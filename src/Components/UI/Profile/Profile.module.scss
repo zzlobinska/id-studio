@@ -1,0 +1,43 @@
+@use '../../../styles/index.scss' as *;
+
+.profile {
+	padding: 100px 40px;
+	background-color: white;
+	font-family: $first-font;
+	margin-left: 30px;
+    
+}
+
+.description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 35px;
+    margin-bottom: 30px;
+}
+
+.presention {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 20px;
+	color: $dark;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.job {
+	color: #b5b5b5;
+}
+
+.icons {
+	display: flex;
+	gap: 10px;
+
+	&__icon {
+		transition: transform 0.3s;
+		&:hover {
+			transform: scale(80%);
+		}
+	}
+}
