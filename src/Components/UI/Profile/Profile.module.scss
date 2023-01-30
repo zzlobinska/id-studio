@@ -5,7 +5,6 @@
 	background-color: white;
 	font-family: $first-font;
 	margin-left: 30px;
-    
 }
 
 .description {
@@ -13,7 +12,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: 35px;
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .presention {
@@ -39,5 +38,25 @@
 		&:hover {
 			transform: scale(80%);
 		}
+	}
+}
+
+@media (max-width: 450px) {
+	.description {
+		gap: 0;
+	}
+	.person {
+		transform: scale(65%);
+	}
+
+	.text {
+		font-size: 14px;
+	}
+
+	.name {
+		font-size: 16px;
+	}
+	.job {
+		font-size: 16px;
 	}
 }

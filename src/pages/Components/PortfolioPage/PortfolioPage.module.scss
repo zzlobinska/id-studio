@@ -1,6 +1,5 @@
 @use '../../../styles/index.scss' as *;
 
-
 .portfolio {
 	padding: 78px calc(50% - 700px);
 	background-color: $grey;
@@ -138,6 +137,36 @@
 			&:nth-last-child(-n + 5) {
 				display: none;
 			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.header {
+		margin-bottom: 40px;
+	}
+	.types {
+		&__type {
+			&__1 {
+				padding-left: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 570px) {
+	.types {
+		&__type {
+			padding: 20px;
+			font-size: 12px;
+		}
+	}
+}
+@media (max-width: 440px) {
+	.types {
+		&__type {
+			padding: 15px;
+			font-size: 10px;
 		}
 	}
 }

@@ -5,9 +5,9 @@
 }
 
 .main_header {
-	position: fixed;
+	position: absolute;
 	padding: 20px calc(50% - 700px);
-	background: transparent;
+	background-color: transparent;
 	font-family: $first-font;
 	color: $brown;
 	display: flex;
