@@ -6,6 +6,12 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+
+}
+
+
 .alice-carousel__stage {
 	// display: flex;
 	// gap: 30px;
@@ -19,12 +25,13 @@
 	display: none;
 }
 
-  .alice-carousel__dots-item {
+.alice-carousel__dots-item {
 	width: 14px !important;
 	height: 14px !important;
-	background-color: #DFDFDF !important;
+	background-color: #dfdfdf !important;
 }
 
-.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
-    background-color: #D3A265 !important;
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+	background-color: #d3a265 !important;
 }

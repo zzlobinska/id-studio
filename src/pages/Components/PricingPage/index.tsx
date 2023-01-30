@@ -1,5 +1,7 @@
 import Card from '../../../Components/UI/Card/Card';
 import styles from './PricingPage.module.scss';
+// import {scroll} from 'react-scroll'
+
 
 const cardServices = [
 	'Interior Design',
@@ -10,7 +12,7 @@ const cardServices = [
 
 const PricingPage = () => {
 	return (
-		<div className={styles.pricing}>
+		<div className={styles.pricing} id='pricing'>
 			<p className={styles.title}>
 				<h2 className={styles.title__1}>Our</h2>
 				<h2 className={styles.title__2}>Pricing</h2>

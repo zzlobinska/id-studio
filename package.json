@@ -17,6 +17,7 @@
     "react-multi-carousel": "^2.8.2",
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.9",
     "react-show-more-text": "^1.6.2",
     "read-more-react": "^1.0.10",
     "sass": "^1.57.1",
@@ -46,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.6"
   }
 }
